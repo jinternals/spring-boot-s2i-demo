@@ -9,8 +9,8 @@ public class HelloController {
 
 	@RequestMapping("/")
 	String home(ModelMap modal) {
-		modal.addAttribute("title", "Dear Learner");
-		modal.addAttribute("message", "Welcome to SpringBoot");
+		modal.addAttribute("title", "Spring boot s2i demo");
+		modal.addAttribute("message", "oc new-app jinternals01/spring-boot-s2i:latest~https://github.com/jinternals/spring-boot-s2i-demo.git");
 		return "hello";
 	}
 }
